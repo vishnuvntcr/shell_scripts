@@ -1,4 +1,4 @@
-# Well tested shell_scripts
+# SHELL SCRIPTS
 
 ## Script to create Apache2 virtual host
 
@@ -6,6 +6,5 @@
 
 ```
 sh create_host.sh
-
 ```
 
