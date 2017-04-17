@@ -7,6 +7,8 @@ cordova plugin rm cordova-plugin-console
 
 cordova build --release android
 
+cd /platforms/android/build/outputs/apk
+
 keytool -genkey -v -keystore "$key_name.keystore" -alias $alias_name -keyalg RSA -keysize 2048 -validity 10000
 
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore "$key_name.keystore" android-release-unsigned.apk $alias_name -tsa http://timestamp.digicert.com
